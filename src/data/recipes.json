@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cha-de-hortela-da-vo",
+    "title": "Cha de Hortela da Vo",
+    "category": "Receita afetiva",
+    "description": "Infusao simples associada a momentos de cuidado e acolhimento.",
+    "plantIds": ["hortela"],
+    "ingredients": ["Folhas de hortela", "Agua quente"],
+    "preparation": [
+      "Higienize as folhas de hortela.",
+      "Coloque as folhas em agua quente.",
+      "Aguarde alguns minutos antes de servir."
+    ],
+    "time": "10 min",
+    "imageKey": "cha-de-hortela"
+  },
+  {
+    "id": "batata-doce-assada-com-alecrim",
+    "title": "Batata-doce assada com Alecrim",
+    "category": "Raizes e ramos",
+    "description": "Receita simples que aproveita temperos frescos da horta.",
+    "plantIds": ["alecrim"],
+    "ingredients": ["Batata-doce", "Alecrim", "Azeite", "Sal"],
+    "preparation": [
+      "Corte a batata-doce em pedacos.",
+      "Tempere com azeite, sal e alecrim.",
+      "Asse ate ficar macia e dourada."
+    ],
+    "time": "40 min",
+    "imageKey": "batata-doce-alecrim"
+  }
+]

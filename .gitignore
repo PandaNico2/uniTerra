@@ -1,0 +1,19 @@
+node_modules/
+docs/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native build outputs
+android/
+ios/
+
+# Local files
+.DS_Store
+*.log
+
+# Environment
+.env
+.env.*

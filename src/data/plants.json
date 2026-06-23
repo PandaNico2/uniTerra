@@ -1,0 +1,36 @@
+[
+  {
+    "id": "hortela",
+    "popularName": "Hortela",
+    "scientificName": "Mentha spicata",
+    "categories": ["medicinal", "aromatica", "culinaria"],
+    "description": "Planta refrescante muito usada em chas, sucos e receitas simples da comunidade.",
+    "cultivation": {
+      "watering": "Regas frequentes, mantendo o solo umido sem encharcar.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo umido e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Chas", "Sucos", "Saladas", "Sobremesas"],
+    "validated": true,
+    "imageKey": "hortela"
+  },
+  {
+    "id": "alecrim",
+    "popularName": "Alecrim",
+    "scientificName": "Salvia rosmarinus",
+    "categories": ["aromatica", "culinaria"],
+    "description": "Erva aromatica usada para temperar alimentos e perfumar ambientes.",
+    "cultivation": {
+      "watering": "Regas moderadas, evitando excesso de agua.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Ano todo em locais quentes",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Temperos", "Infusoes", "Assados"],
+    "validated": true,
+    "imageKey": "alecrim"
+  }
+]
