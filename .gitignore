@@ -3,6 +3,7 @@ docs/
 
 # Expo
 .expo/
+expo-env.d.ts
 dist/
 web-build/
 

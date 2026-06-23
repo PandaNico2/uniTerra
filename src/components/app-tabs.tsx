@@ -10,21 +10,38 @@ export default function AppTabs() {
   return (
     <NativeTabs
       backgroundColor={colors.background}
-      indicatorColor={colors.backgroundElement}
-      labelStyle={{ selected: { color: colors.text } }}>
+      indicatorColor={colors.primaryLight}
+      tintColor={colors.primary}
+      labelStyle={{ selected: { color: colors.primary } }}>
       <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>Inicio</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/home.png')}
-          renderingMode="template"
+          sf={{ default: 'house', selected: 'house.fill' }}
+          md={{ default: 'home', selected: 'home' }}
         />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="explore">
-        <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
+      <NativeTabs.Trigger name="catalogo">
+        <NativeTabs.Trigger.Label>Catalogo</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
+          sf={{ default: 'book', selected: 'book.fill' }}
+          md={{ default: 'menu_book', selected: 'menu_book' }}
+        />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="horta">
+        <NativeTabs.Trigger.Label>Minha Horta</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          sf={{ default: 'leaf', selected: 'leaf.fill' }}
+          md={{ default: 'local_florist', selected: 'local_florist' }}
+        />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="receitas">
+        <NativeTabs.Trigger.Label>Receitas</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          sf={{ default: 'fork.knife', selected: 'fork.knife' }}
+          md={{ default: 'restaurant_menu', selected: 'restaurant_menu' }}
         />
       </NativeTabs.Trigger>
     </NativeTabs>

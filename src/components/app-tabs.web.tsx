@@ -6,14 +6,16 @@ import {
   TabTriggerSlotProps,
   TabListProps,
 } from 'expo-router/ui';
-import { SymbolView } from 'expo-symbols';
-import { Pressable, useColorScheme, View, StyleSheet } from 'react-native';
+import { SymbolView, type SymbolViewProps } from 'expo-symbols';
+import { Pressable, View, StyleSheet } from 'react-native';
 
-import { ExternalLink } from './external-link';
 import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
 
-import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { MaxContentWidth, Spacing } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
+
+type TabSymbolName = SymbolViewProps['name'];
 
 export default function AppTabs() {
   return (
@@ -21,11 +23,24 @@ export default function AppTabs() {
       <TabSlot style={{ height: '100%' }} />
       <TabList asChild>
         <CustomTabList>
-          <TabTrigger name="home" href="/" asChild>
-            <TabButton>Home</TabButton>
+          <TabTrigger name="inicio" href="/" asChild>
+            <TabButton icon={{ ios: 'house', android: 'home', web: 'home' }}>Inicio</TabButton>
           </TabTrigger>
-          <TabTrigger name="explore" href="/explore" asChild>
-            <TabButton>Explore</TabButton>
+          <TabTrigger name="catalogo" href="/catalogo" asChild>
+            <TabButton icon={{ ios: 'book', android: 'menu_book', web: 'menu_book' }}>
+              Catalogo
+            </TabButton>
+          </TabTrigger>
+          <TabTrigger name="horta" href="/horta" asChild>
+            <TabButton icon={{ ios: 'leaf', android: 'local_florist', web: 'local_florist' }}>
+              Minha Horta
+            </TabButton>
+          </TabTrigger>
+          <TabTrigger name="receitas" href="/receitas" asChild>
+            <TabButton
+              icon={{ ios: 'fork.knife', android: 'restaurant_menu', web: 'restaurant_menu' }}>
+              Receitas
+            </TabButton>
           </TabTrigger>
         </CustomTabList>
       </TabList>
@@ -33,12 +48,18 @@ export default function AppTabs() {
   );
 }
 
-export function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps) {
+export function TabButton({ children, icon, isFocused, ...props }: TabTriggerSlotProps & {
+  icon: TabSymbolName;
+}) {
+  const theme = useTheme();
+  const tintColor = isFocused ? theme.primary : theme.textSecondary;
+
   return (
     <Pressable {...props} style={({ pressed }) => pressed && styles.pressed}>
       <ThemedView
         type={isFocused ? 'backgroundSelected' : 'backgroundElement'}
         style={styles.tabButtonView}>
+        <SymbolView name={icon} tintColor={tintColor} size={20} />
         <ThemedText type="small" themeColor={isFocused ? 'text' : 'textSecondary'}>
           {children}
         </ThemedText>
@@ -48,28 +69,14 @@ export function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps
 }
 
 export function CustomTabList(props: TabListProps) {
-  const scheme = useColorScheme();
-  const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
-
   return (
     <View {...props} style={styles.tabListContainer}>
       <ThemedView type="backgroundElement" style={styles.innerContainer}>
         <ThemedText type="smallBold" style={styles.brandText}>
-          Expo Starter
+          uniterra
         </ThemedText>
 
         {props.children}
-
-        <ExternalLink href="https://docs.expo.dev" asChild>
-          <Pressable style={styles.externalPressable}>
-            <ThemedText type="link">Docs</ThemedText>
-            <SymbolView
-              tintColor={colors.text}
-              name={{ ios: 'arrow.up.right.square', web: 'link' }}
-              size={12}
-            />
-          </Pressable>
-        </ExternalLink>
       </ThemedView>
     </View>
   );
@@ -86,8 +93,8 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     paddingVertical: Spacing.two,
-    paddingHorizontal: Spacing.five,
-    borderRadius: Spacing.five,
+    paddingHorizontal: Spacing.three,
+    borderRadius: Spacing.three,
     flexDirection: 'row',
     alignItems: 'center',
     flexGrow: 1,
@@ -102,8 +109,11 @@ const styles = StyleSheet.create({
   },
   tabButtonView: {
     paddingVertical: Spacing.one,
-    paddingHorizontal: Spacing.three,
+    paddingHorizontal: Spacing.two,
     borderRadius: Spacing.three,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
   },
   externalPressable: {
     flexDirection: 'row',
