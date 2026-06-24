@@ -12,9 +12,16 @@ type ScreenProps = {
   subtitle?: string;
   children: ReactNode;
   bottomInset?: boolean;
+  horizontalPadding?: boolean;
 };
 
-export function Screen({ title, subtitle, children, bottomInset = true }: ScreenProps) {
+export function Screen({
+  title,
+  subtitle,
+  children,
+  bottomInset = true,
+  horizontalPadding = true,
+}: ScreenProps) {
   const theme = useTheme();
 
   return (
@@ -23,6 +30,7 @@ export function Screen({ title, subtitle, children, bottomInset = true }: Screen
         style={[styles.scroll, { backgroundColor: theme.background }]}
         contentContainerStyle={[
           styles.content,
+          horizontalPadding && styles.horizontalPadding,
           bottomInset && { paddingBottom: BottomTabInset + Spacing.five },
         ]}>
         <SafeAreaView style={styles.safeArea}>
@@ -54,6 +62,8 @@ const styles = StyleSheet.create({
   },
   content: {
     alignItems: 'center',
+  },
+  horizontalPadding: {
     paddingHorizontal: Spacing.three,
   },
   safeArea: {
