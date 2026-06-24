@@ -1,49 +1,80 @@
-import { NativeTabs } from 'expo-router/unstable-native-tabs';
-import { useColorScheme } from 'react-native';
+import { Tabs } from 'expo-router';
+import { SymbolView, type SymbolViewProps } from 'expo-symbols';
+import { useColorScheme, type ColorValue } from 'react-native';
 
 import { Colors } from '@/constants/theme';
+
+type TabIconName = SymbolViewProps['name'];
+
+function TabIcon({ name, color }: { name: TabIconName; color: ColorValue }) {
+  return <SymbolView name={name} tintColor={String(color)} size={24} />;
+}
 
 export default function AppTabs() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
 
   return (
-    <NativeTabs
-      backgroundColor={colors.background}
-      indicatorColor={colors.primaryLight}
-      tintColor={colors.primary}
-      labelStyle={{ selected: { color: colors.primary } }}>
-      <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Inicio</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          sf={{ default: 'house', selected: 'house.fill' }}
-          md={{ default: 'home', selected: 'home' }}
-        />
-      </NativeTabs.Trigger>
-
-      <NativeTabs.Trigger name="catalogo">
-        <NativeTabs.Trigger.Label>Catalogo</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          sf={{ default: 'book', selected: 'book.fill' }}
-          md={{ default: 'menu_book', selected: 'menu_book' }}
-        />
-      </NativeTabs.Trigger>
-
-      <NativeTabs.Trigger name="horta">
-        <NativeTabs.Trigger.Label>Minha Horta</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          sf={{ default: 'leaf', selected: 'leaf.fill' }}
-          md={{ default: 'local_florist', selected: 'local_florist' }}
-        />
-      </NativeTabs.Trigger>
-
-      <NativeTabs.Trigger name="receitas">
-        <NativeTabs.Trigger.Label>Receitas</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          sf={{ default: 'fork.knife', selected: 'fork.knife' }}
-          md={{ default: 'restaurant_menu', selected: 'restaurant_menu' }}
-        />
-      </NativeTabs.Trigger>
-    </NativeTabs>
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: colors.primary,
+        tabBarInactiveTintColor: colors.textSecondary,
+        tabBarStyle: {
+          backgroundColor: colors.background,
+          borderTopColor: colors.border,
+          minHeight: 72,
+          paddingTop: 8,
+        },
+        tabBarLabelStyle: {
+          fontSize: 12,
+          fontWeight: 600,
+        },
+      }}>
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: 'Inicio',
+          tabBarIcon: ({ color }) => (
+            <TabIcon name={{ ios: 'house', android: 'home', web: 'home' }} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="catalogo"
+        options={{
+          title: 'Catalogo',
+          tabBarIcon: ({ color }) => (
+            <TabIcon name={{ ios: 'book', android: 'menu_book', web: 'menu_book' }} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="horta"
+        options={{
+          title: 'Minha Horta',
+          tabBarIcon: ({ color }) => (
+            <TabIcon
+              name={{ ios: 'leaf', android: 'local_florist', web: 'local_florist' }}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="receitas"
+        options={{
+          title: 'Receitas',
+          tabBarIcon: ({ color }) => (
+            <TabIcon
+              name={{ ios: 'fork.knife', android: 'restaurant_menu', web: 'restaurant_menu' }}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen name="planta/[id]" options={{ href: null }} />
+      <Tabs.Screen name="receita/[id]" options={{ href: null }} />
+    </Tabs>
   );
 }

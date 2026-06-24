@@ -1,8 +1,279 @@
 [
   {
-    "id": "hortela",
-    "popularName": "Hortela",
-    "scientificName": "Mentha spicata",
+    "id": "salsinha",
+    "popularName": "Salsinha",
+    "categories": ["culinaria"],
+    "description": "Erva basica muito usada para finalizar pratos e trazer frescor as receitas do dia a dia.",
+    "cultivation": {
+      "watering": "Mantenha o solo levemente umido, sem encharcar.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Ano todo em clima ameno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Temperos", "Saladas", "Molhos"],
+    "validated": false,
+    "imageKey": "salsinha"
+  },
+  {
+    "id": "manjericao-roxo",
+    "popularName": "Manjericao Roxo",
+    "categories": ["aromatica", "culinaria"],
+    "description": "Variedade aromatica usada em temperos, molhos e preparos frescos.",
+    "cultivation": {
+      "watering": "Regue com frequencia moderada, mantendo o solo umido.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo rico em materia organica",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Molhos", "Saladas", "Temperos"],
+    "validated": false,
+    "imageKey": "manjericao-roxo"
+  },
+  {
+    "id": "alfavaca",
+    "popularName": "Alfavaca",
+    "categories": ["aromatica", "culinaria", "medicinal"],
+    "description": "Planta aromatica presente em hortas caseiras e usada em preparos culinarios e infusoes.",
+    "cultivation": {
+      "watering": "Regas regulares, evitando excesso de agua.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Chas", "Temperos", "Molhos"],
+    "validated": false,
+    "imageKey": "alfavaca"
+  },
+  {
+    "id": "alho",
+    "popularName": "Alho",
+    "categories": ["culinaria", "medicinal"],
+    "description": "Ingrediente tradicional de uso culinario, valorizado como base de temperos.",
+    "cultivation": {
+      "watering": "Regue de forma moderada, reduzindo a agua perto da colheita.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Temperos", "Refogados", "Molhos"],
+    "validated": false,
+    "imageKey": "alho"
+  },
+  {
+    "id": "cebola",
+    "popularName": "Cebola",
+    "categories": ["culinaria"],
+    "description": "Hortalica muito usada como base de receitas afetivas e preparos cotidianos.",
+    "cultivation": {
+      "watering": "Regas moderadas, mantendo umidade constante no inicio.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo solto, fertil e bem drenado",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Refogados", "Molhos", "Saladas"],
+    "validated": false,
+    "imageKey": "cebola"
+  },
+  {
+    "id": "rucula",
+    "popularName": "Rucula",
+    "categories": ["culinaria"],
+    "description": "Folhosa de sabor marcante, usada principalmente em saladas e preparos frescos.",
+    "cultivation": {
+      "watering": "Regas frequentes para manter as folhas macias.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Saladas", "Sanduiches", "Pizzas"],
+    "validated": false,
+    "imageKey": "rucula"
+  },
+  {
+    "id": "alface-crespa",
+    "popularName": "Alface Crespa",
+    "categories": ["culinaria"],
+    "description": "Folhosa popular em hortas comunitarias, muito usada em saladas.",
+    "cultivation": {
+      "watering": "Regas frequentes, mantendo o solo fresco.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil, leve e umido",
+      "plantingSeason": "Ano todo em clima ameno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Saladas", "Lanches", "Acompanhamentos"],
+    "validated": false,
+    "imageKey": "alface-crespa"
+  },
+  {
+    "id": "alface-americana",
+    "popularName": "Alface Americana",
+    "categories": ["culinaria"],
+    "description": "Folhosa crocante usada em saladas, lanches e preparos leves.",
+    "cultivation": {
+      "watering": "Regas frequentes, evitando encharcamento.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Ano todo em clima ameno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Saladas", "Lanches", "Acompanhamentos"],
+    "validated": false,
+    "imageKey": "alface-americana"
+  },
+  {
+    "id": "agriao",
+    "popularName": "Agriao",
+    "categories": ["culinaria", "medicinal"],
+    "description": "Folhosa de sabor levemente picante, comum em saladas, sopas e preparos caseiros.",
+    "cultivation": {
+      "watering": "Precisa de bastante umidade durante o cultivo.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo umido e rico em materia organica",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Saladas", "Sopas", "Refogados"],
+    "validated": false,
+    "imageKey": "agriao"
+  },
+  {
+    "id": "oregano",
+    "popularName": "Oregano",
+    "categories": ["aromatica", "culinaria"],
+    "description": "Erva aromatica usada em temperos, molhos e pratos assados.",
+    "cultivation": {
+      "watering": "Regas moderadas, deixando o solo secar levemente.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Temperos", "Molhos", "Assados"],
+    "validated": false,
+    "imageKey": "oregano"
+  },
+  {
+    "id": "manjerona",
+    "popularName": "Manjerona",
+    "categories": ["aromatica", "culinaria"],
+    "description": "Erva aromatica de sabor delicado, usada em temperos e infusoes.",
+    "cultivation": {
+      "watering": "Regas moderadas, sem encharcar.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Temperos", "Chas", "Molhos"],
+    "validated": false,
+    "imageKey": "manjerona"
+  },
+  {
+    "id": "batata-doce",
+    "popularName": "Batata-doce",
+    "categories": ["culinaria"],
+    "description": "Planta alimenticia em que se aproveitam a raiz e, em alguns preparos, tambem as folhas.",
+    "cultivation": {
+      "watering": "Regas regulares no inicio do desenvolvimento.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo fofo, profundo e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Raiz assada", "Refogados", "Sopas"],
+    "validated": false,
+    "imageKey": "batata-doce"
+  },
+  {
+    "id": "abobora",
+    "popularName": "Abobora",
+    "categories": ["culinaria"],
+    "description": "Planta de uso alimentar amplo, presente em receitas doces e salgadas.",
+    "cultivation": {
+      "watering": "Regas regulares, principalmente na floracao e frutificacao.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo fertil, profundo e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Sopas", "Assados", "Doces"],
+    "validated": false,
+    "imageKey": "abobora"
+  },
+  {
+    "id": "aipim",
+    "popularName": "Aipim",
+    "categories": ["culinaria"],
+    "description": "Raiz alimenticia tradicional, usada cozida, assada ou em preparos comunitarios.",
+    "cultivation": {
+      "watering": "Regas moderadas no inicio do plantio.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo solto, profundo e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Cozidos", "Assados", "Bolos"],
+    "validated": false,
+    "imageKey": "aipim"
+  },
+  {
+    "id": "tomilho",
+    "popularName": "Tomilho",
+    "categories": ["aromatica", "culinaria", "medicinal"],
+    "description": "Erva aromatica usada em temperos especiais, chas e preparos culinarios.",
+    "cultivation": {
+      "watering": "Regas moderadas, evitando excesso de umidade.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Temperos", "Chas", "Assados"],
+    "validated": false,
+    "imageKey": "tomilho"
+  },
+  {
+    "id": "alecrim",
+    "popularName": "Alecrim",
+    "categories": ["aromatica", "culinaria", "medicinal"],
+    "description": "Erva aromatica usada para temperar alimentos, preparar infusoes e perfumar ambientes.",
+    "cultivation": {
+      "watering": "Regas moderadas, evitando excesso de agua.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Ano todo em locais quentes",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Temperos", "Infusoes", "Assados"],
+    "validated": false,
+    "imageKey": "alecrim"
+  },
+  {
+    "id": "lavanda",
+    "popularName": "Lavanda",
+    "categories": ["aromatica", "medicinal"],
+    "description": "Planta aromatica associada a usos educativos sobre aroma, cuidado e bem-estar.",
+    "cultivation": {
+      "watering": "Regas moderadas, deixando o solo secar entre regas.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo bem drenado",
+      "plantingSeason": "Primavera",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Aromas", "Infusoes", "Sachês"],
+    "validated": false,
+    "imageKey": "lavanda"
+  },
+  {
+    "id": "hortela-comum",
+    "popularName": "Hortela Comum",
     "categories": ["medicinal", "aromatica", "culinaria"],
     "description": "Planta refrescante muito usada em chas, sucos e receitas simples da comunidade.",
     "cultivation": {
@@ -13,24 +284,263 @@
       "difficulty": "Iniciante"
     },
     "uses": ["Chas", "Sucos", "Saladas", "Sobremesas"],
-    "validated": true,
-    "imageKey": "hortela"
+    "validated": false,
+    "imageKey": "hortela-comum"
   },
   {
-    "id": "alecrim",
-    "popularName": "Alecrim",
-    "scientificName": "Salvia rosmarinus",
-    "categories": ["aromatica", "culinaria"],
-    "description": "Erva aromatica usada para temperar alimentos e perfumar ambientes.",
+    "id": "hortela-pimenta",
+    "popularName": "Hortela Pimenta",
+    "categories": ["medicinal", "aromatica", "culinaria"],
+    "description": "Hortela de aroma intenso, usada em infusoes e preparos refrescantes.",
     "cultivation": {
-      "watering": "Regas moderadas, evitando excesso de agua.",
-      "sunlight": "Sol pleno",
-      "soil": "Solo leve e bem drenado",
-      "plantingSeason": "Ano todo em locais quentes",
+      "watering": "Regas frequentes, mantendo o solo umido.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo rico e umido",
+      "plantingSeason": "Primavera e verao",
       "difficulty": "Iniciante"
     },
-    "uses": ["Temperos", "Infusoes", "Assados"],
-    "validated": true,
-    "imageKey": "alecrim"
+    "uses": ["Chas", "Sucos", "Aromas"],
+    "validated": false,
+    "imageKey": "hortela-pimenta"
+  },
+  {
+    "id": "salvia",
+    "popularName": "Salvia",
+    "categories": ["aromatica", "culinaria", "medicinal"],
+    "description": "Erva aromatica usada em temperos e em conteudos educativos sobre plantas medicinais.",
+    "cultivation": {
+      "watering": "Regas moderadas, evitando solo encharcado.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo bem drenado",
+      "plantingSeason": "Primavera",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Temperos", "Infusoes", "Aromas"],
+    "validated": false,
+    "imageKey": "salvia"
+  },
+  {
+    "id": "azedinha",
+    "popularName": "Azedinha",
+    "categories": ["culinaria", "panc"],
+    "description": "Folha de sabor acido, usada em saladas e preparos frescos.",
+    "cultivation": {
+      "watering": "Regas regulares para manter folhas tenras.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e umido",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Saladas", "Refogados", "Molhos"],
+    "validated": false,
+    "imageKey": "azedinha"
+  },
+  {
+    "id": "erva-cidreira",
+    "popularName": "Erva Cidreira",
+    "categories": ["medicinal", "aromatica"],
+    "description": "Planta muito associada a chas caseiros e momentos de cuidado.",
+    "cultivation": {
+      "watering": "Regas frequentes, mantendo o solo levemente umido.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Chas", "Infusoes", "Aromas"],
+    "validated": false,
+    "imageKey": "erva-cidreira"
+  },
+  {
+    "id": "capim-limao",
+    "popularName": "Capim Limao",
+    "categories": ["medicinal", "aromatica", "culinaria"],
+    "description": "Planta aromatica muito usada em chas, sucos e preparos refrescantes.",
+    "cultivation": {
+      "watering": "Regas regulares, principalmente em periodos secos.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Chas", "Sucos", "Infusoes"],
+    "validated": false,
+    "imageKey": "capim-limao"
+  },
+  {
+    "id": "camomila",
+    "popularName": "Camomila",
+    "categories": ["medicinal", "aromatica"],
+    "description": "Planta conhecida por suas flores usadas em infusoes educativas e receitas afetivas.",
+    "cultivation": {
+      "watering": "Regas moderadas, mantendo leve umidade.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Chas", "Infusoes", "Aromas"],
+    "validated": false,
+    "imageKey": "camomila"
+  },
+  {
+    "id": "alho-poro",
+    "popularName": "Alho Poro",
+    "categories": ["culinaria"],
+    "description": "Hortalica aromatica usada em sopas, caldos e refogados.",
+    "cultivation": {
+      "watering": "Regas regulares, mantendo umidade constante.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo fertil e fofo",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Sopas", "Caldos", "Refogados"],
+    "validated": false,
+    "imageKey": "alho-poro"
+  },
+  {
+    "id": "alho-japones",
+    "popularName": "Alho Japones",
+    "categories": ["culinaria", "aromatica"],
+    "description": "Tambem conhecido como nira, e usado como tempero em preparos variados.",
+    "cultivation": {
+      "watering": "Regas moderadas e frequentes.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Ano todo em clima ameno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Temperos", "Refogados", "Omeletes"],
+    "validated": false,
+    "imageKey": "alho-japones"
+  },
+  {
+    "id": "aipo",
+    "popularName": "Aipo",
+    "categories": ["culinaria", "aromatica"],
+    "description": "Tambem chamado de salsao, e usado em caldos, sopas e temperos.",
+    "cultivation": {
+      "watering": "Regas frequentes, mantendo o solo sempre umido.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo rico em materia organica",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Caldos", "Sopas", "Saladas"],
+    "validated": false,
+    "imageKey": "aipo"
+  },
+  {
+    "id": "pimenta-malagueta",
+    "popularName": "Pimenta Malagueta",
+    "categories": ["culinaria"],
+    "description": "Pimenta de sabor intenso, usada para temperar receitas e conservas.",
+    "cultivation": {
+      "watering": "Regas moderadas, evitando encharcar.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Temperos", "Molhos", "Conservas"],
+    "validated": false,
+    "imageKey": "pimenta-malagueta"
+  },
+  {
+    "id": "coentro",
+    "popularName": "Coentro",
+    "categories": ["aromatica", "culinaria"],
+    "description": "Erva aromatica presente em pratos regionais, peixes, molhos e saladas.",
+    "cultivation": {
+      "watering": "Regas regulares, mantendo o solo levemente umido.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Ano todo em clima ameno",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Peixes", "Molhos", "Saladas"],
+    "validated": false,
+    "imageKey": "coentro"
+  },
+  {
+    "id": "erva-doce",
+    "popularName": "Erva Doce",
+    "categories": ["medicinal", "aromatica", "culinaria"],
+    "description": "Planta usada em chas, aromas e preparos doces.",
+    "cultivation": {
+      "watering": "Regas moderadas e regulares.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo profundo e bem drenado",
+      "plantingSeason": "Outono e inverno",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Chas", "Doces", "Infusoes"],
+    "validated": false,
+    "imageKey": "erva-doce"
+  },
+  {
+    "id": "boldo-brasileiro",
+    "popularName": "Boldo Brasileiro",
+    "categories": ["medicinal"],
+    "description": "Planta popular em hortas medicinais, apresentada no app com carater educativo.",
+    "cultivation": {
+      "watering": "Regas moderadas, evitando excesso de agua.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Chas", "Infusoes", "Horta medicinal"],
+    "validated": false,
+    "imageKey": "boldo-brasileiro"
+  },
+  {
+    "id": "carqueja",
+    "popularName": "Carqueja",
+    "categories": ["medicinal"],
+    "description": "Planta usada em conteudos educativos sobre chas e saberes populares.",
+    "cultivation": {
+      "watering": "Regas moderadas, com boa drenagem.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo leve e bem drenado",
+      "plantingSeason": "Primavera",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Chas", "Infusoes", "Horta medicinal"],
+    "validated": false,
+    "imageKey": "carqueja"
+  },
+  {
+    "id": "malva",
+    "popularName": "Malva",
+    "categories": ["medicinal", "aromatica"],
+    "description": "Planta presente em hortas medicinais e em saberes populares da comunidade.",
+    "cultivation": {
+      "watering": "Regas regulares, mantendo o solo levemente umido.",
+      "sunlight": "Sol parcial",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Iniciante"
+    },
+    "uses": ["Chas", "Infusoes", "Horta medicinal"],
+    "validated": false,
+    "imageKey": "malva"
+  },
+  {
+    "id": "hibisco",
+    "popularName": "Hibisco",
+    "categories": ["medicinal", "aromatica", "culinaria"],
+    "description": "Planta de flores vistosas usada em infusoes, bebidas e receitas refrescantes.",
+    "cultivation": {
+      "watering": "Regas regulares, principalmente em dias quentes.",
+      "sunlight": "Sol pleno",
+      "soil": "Solo fertil e bem drenado",
+      "plantingSeason": "Primavera e verao",
+      "difficulty": "Intermediario"
+    },
+    "uses": ["Chas", "Sucos", "Infusoes"],
+    "validated": false,
+    "imageKey": "hibisco"
   }
 ]

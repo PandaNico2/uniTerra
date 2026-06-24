@@ -4,7 +4,7 @@
     "title": "Cha de Hortela da Vo",
     "category": "Receita afetiva",
     "description": "Infusao simples associada a momentos de cuidado e acolhimento.",
-    "plantIds": ["hortela"],
+    "plantIds": ["hortela-comum"],
     "ingredients": ["Folhas de hortela", "Agua quente"],
     "preparation": [
       "Higienize as folhas de hortela.",
@@ -13,6 +13,36 @@
     ],
     "time": "10 min",
     "imageKey": "cha-de-hortela"
+  },
+  {
+    "id": "suco-de-hibisco-com-capim-limao",
+    "title": "Suco de Hibisco com Capim Limao",
+    "category": "Refrescante e terapeutico",
+    "description": "Bebida colorida e refrescante para valorizar ingredientes aromaticos da horta.",
+    "plantIds": ["hibisco", "capim-limao"],
+    "ingredients": ["Hibisco", "Capim limao", "Agua", "Gelo"],
+    "preparation": [
+      "Prepare uma infusao de hibisco.",
+      "Adicione capim limao e deixe descansar.",
+      "Coe, espere esfriar e sirva com gelo."
+    ],
+    "time": "15 min",
+    "imageKey": "suco-de-hibisco-capim-limao"
+  },
+  {
+    "id": "pesto-de-ora-pro-nobis",
+    "title": "Pesto de Ora-pro-nobis",
+    "category": "Nutricao PANC",
+    "description": "Receita inspirada no uso de PANCs para preparos simples e nutritivos.",
+    "plantIds": ["ora-pro-nobis"],
+    "ingredients": ["Ora-pro-nobis", "Azeite", "Alho", "Castanhas", "Sal"],
+    "preparation": [
+      "Higienize as folhas de ora-pro-nobis.",
+      "Bata as folhas com azeite, alho, castanhas e sal.",
+      "Sirva com paes, massas ou legumes."
+    ],
+    "time": "20 min",
+    "imageKey": "pesto-ora-pro-nobis"
   },
   {
     "id": "batata-doce-assada-com-alecrim",
